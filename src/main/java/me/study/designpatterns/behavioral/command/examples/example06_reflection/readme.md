@@ -1,0 +1,4 @@
+# Java reflection and the Command design pattern
+https://sourcemaking.com/design_patterns/command/java/2
+
+Motivation. "Sometimes it is necessary to issue requests to objects without knowing anything about the operation being requested or the receiver of the request." The Command design pattern suggests encapsulating ("wrapping") in an object all (or some) of the following: an object, a method name, and some arguments. Java does not support "pointers to methods", but its reflection capability will do nicely. The "command" is a black box to the "client". All the client does is call "execute()" on the opaque object.
