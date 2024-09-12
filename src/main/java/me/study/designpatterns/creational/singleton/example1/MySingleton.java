@@ -1,4 +1,4 @@
-package me.study.designpatterns.structural.singleton.example1;
+package me.study.designpatterns.creational.singleton.example1;
 
 /*
  * This is a simple way to implement the singleton pattern! The instance of the

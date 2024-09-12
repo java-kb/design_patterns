@@ -5,7 +5,7 @@ import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
-import me.study.designpatterns.structural.singleton.example1.MySingleton;
+import me.study.designpatterns.creational.singleton.example1.MySingleton;
 
 public class MySingletonTest {
 
