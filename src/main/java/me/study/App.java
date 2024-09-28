@@ -1,17 +1,10 @@
 package me.study;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.io.IOException;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
+import java.io.ByteArrayOutputStream;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
-import java.io.ByteArrayOutputStream;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class App {
     public static void main(String[] args) {
