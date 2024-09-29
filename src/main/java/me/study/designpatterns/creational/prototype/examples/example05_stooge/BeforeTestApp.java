@@ -33,26 +33,27 @@ public class BeforeTestApp {
             else if (stooge instanceof Curly)
                 ((Curly) stooge).slap_stick();
     }
-}
-
-abstract class Stooge {
-    public abstract void slap_stick();
-}
-
-class Larry extends Stooge {
-    public void slap_stick() {
-        System.out.println("Larry: poke eyes");
+    static abstract class Stooge {
+        public abstract void slap_stick();
+    }
+    
+     static class Larry extends Stooge {
+        public void slap_stick() {
+            System.out.println("Larry: poke eyes");
+        }
+    }
+    
+    static class Moe extends Stooge {
+        public void slap_stick() {
+            System.out.println("Moe: slap head");
+        }
+    }
+    
+    static class Curly extends Stooge {
+        public void slap_stick() {
+            System.out.println("Curly: suffer abuse");
+        }
     }
 }
 
-class Moe extends Stooge {
-    public void slap_stick() {
-        System.out.println("Moe: slap head");
-    }
-}
 
-class Curly extends Stooge {
-    public void slap_stick() {
-        System.out.println("Curly: suffer abuse");
-    }
-}

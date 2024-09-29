@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Budgetbook
+[
+    <!ELEMENT Budgetbook (Item*, Month+)>
+    <!ELEMENT Month (Category*)>
+    <!ELEMENT Category (Item| Category)*>
+    <!ELEMENT Item EMPTY>
+
+    <!ATTLIST Budgetbook description             CDATA #REQUIRED>
+    <!ATTLIST Month description                     CDATA #REQUIRED>
+    <!ATTLIST Category description                 CDATA #REQUIRED>
+    <!ATTLIST Item  description                 CDATA #REQUIRED
+                        amount                       CDATA #REQUIRED
+                        required (yes|no)       "yes" >
+]>
+<Budgetbook description = "Budgetbook 2022">
+    <Item description="Life insurance"  amount = "-1600" required = "yes"/>
+    <Month description = "January">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000" required = "yes"/>
+            <Item description = "Lectures" amount = "5000" required = "yes"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "Februrary">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000" required = "yes"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+            <Category description = "Books">
+                <Item description = "Design Patterns" amount = "-29.90"/>
+                <Item description = "BlueJ book" amount = "-29.90"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "March">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000" required = "yes"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Item description = "New car" amount = "-3000"/>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "April">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000" required = "yes"/>
+            <Item description = "Casino" amount = "10000" required = "yes"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "May">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000" required = "yes"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "June">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000" required = "yes"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "July">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000"/>
+            <Item description = "Vacation pay" amount = "1000"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Item description = "Holiday" amount = "-3076.50"/>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "August">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000" required = "yes"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "September">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000" required = "yes"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+                <Item description = "UFO insurance" amount = "-1537" required = "no"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "October">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000"/>
+            <Item description = "Lectures" amount = "3000"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "November">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+        </Category>
+    </Month>
+    <Month description = "Dezember">
+        <Category description = "Income">
+            <Item description = "Main job" amount = "2000"/>
+            <Item description = "Christmas bonus" amount = "1500"/>
+        </Category>
+        <Category description = "Expenses">
+            <Category description = "Rent">
+                <Item description = "Apartment" amount = "-700"/>
+                <Item description = "Garage" amount = "-150" required = "no"/>
+            </Category>
+            <Category description = "Insurances">
+                <Item description = "Car" amount = "-34.50"/>
+            </Category>
+            <Category description = "Gifts">
+                <Item description = "Spouse" amount = "-100"/>
+                <Item description = "Mother-in-law" amount = "-9.99" required = "no"/>
+                <Item description = "Family" amount = "-150"/>
+            </Category>
+        </Category>
+    </Month>
+</Budgetbook>
