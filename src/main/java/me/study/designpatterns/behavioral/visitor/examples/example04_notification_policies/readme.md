@@ -1,0 +1,1 @@
+a visitor pattern for handling different types of notifications (Email, SMS, and Push) with various notification policies. The code is structured around protocols and extensions, allowing for a clean separation of concerns.
